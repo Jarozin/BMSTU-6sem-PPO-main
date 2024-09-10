@@ -18,6 +18,10 @@ func (s *Serial) Validate() bool {
 	if s.S_idProducer <= 0 || s.S_name == "" || s.S_description == "" || s.S_year <= 0 || s.S_genre == "" || s.S_rating < 0 || s.S_seasons < 0 || s.S_state == "" || s.S_img == "" || s.S_duration == "" {
 		return false
 	}
+
+	// if s.S_idProducer <= 0 || s.S_name == "" || s.S_description == "" || s.S_year <= 0 || s.S_genre == "" || s.S_rating < 0 || s.S_seasons < 0 || s.S_state == "" {
+	// 	return false
+	// }
 	return true
 }
 

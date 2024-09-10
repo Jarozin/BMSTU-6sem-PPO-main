@@ -3,8 +3,6 @@ package controllers
 import (
 	"app/internal/interfaces"
 	"app/internal/models"
-
-	"golang.org/x/crypto/bcrypt"
 )
 
 type UsersCtrl struct {
@@ -66,9 +64,13 @@ func (ctrl *UsersCtrl) AuthUser(login, password string) (*models.Users, error) {
 		return nil, ErrUserNotFound
 	}
 
-	if bcrypt.CompareHashAndPassword([]byte(user.U_password), []byte(password)) != nil {
+	if user.U_password != password {
 		return nil, ErrInvalidPass
 	}
+
+	// if bcrypt.CompareHashAndPassword([]byte(user.U_password), []byte(password)) != nil {
+	// 	return nil, ErrInvalidPass
+	// }
 
 	return user, nil
 }

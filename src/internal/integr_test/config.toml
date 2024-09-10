@@ -1,5 +1,5 @@
 port = ":3000"
-db_url = "user=postgres dbname=ser password=7303_486 host=localhost port=5432 sslmode=disable"
+db_url = "user=postgres dbname=serial password=7303_486 host=localhost port=5432 sslmode=disable"
 db_type = "postgres"
 
 log_path = "./logger/log.txt"

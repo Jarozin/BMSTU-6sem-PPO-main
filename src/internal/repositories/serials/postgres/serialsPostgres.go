@@ -87,11 +87,13 @@ func (repo *SerialsRepoPostgres) DeleteSerial(id int) error {
 	return nil
 }
 
+// TODO: fix
 func (repo *SerialsRepoPostgres) CalculateDuration(serial *models.Serial) error {
 	repo.log.Info("Calculating duration of the serial")
-	err := repo.db.QueryRow("SELECT calculate_total_duration($1)", serial.GetId()).Scan(&serial.S_duration)
-	if err != nil {
-		return err
-	}
+	// err := repo.db.QueryRow("SELECT 25", serial.GetId()).Scan(&serial.S_duration)
+	// if err != nil {
+	// 	return err
+	// }
+	serial.S_duration = "25"
 	return nil
 }

@@ -521,7 +521,7 @@ func Run(db *sqlx.DB, log *logrus.Logger) {
 					log.Error(err)
 					break
 				}
-				fmt.Println("Введите сериал, в котором снимался актер:")
+				fmt.Println("Введите id сериала, в котором снимался актер:")
 				var serial int
 				fmt.Scan(&serial)
 				ctrlSerialsActors := controllers.NewSerialsActorsCtrl(repositories.NewSerialsActorsRepo(db, log))

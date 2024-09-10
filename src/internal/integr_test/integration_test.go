@@ -17,11 +17,11 @@ import (
 
 func TestGetActors(t *testing.T) {
 	cfg := config.Config{}
-	_, err := toml.DecodeFile("D:/BMSTU/PPO/src/config/config.toml", &cfg)
+	_, err := toml.DecodeFile("./config.toml", &cfg)
 	if err != nil {
 		log.Fatal(err)
 	}
-	log, err := logger.InitLog("D:/BMSTU/PPO/src/logger/log.txt")
+	log, err := logger.InitLog("./log.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -42,11 +42,11 @@ func TestGetActors(t *testing.T) {
 
 func TestGetCommentsById(t *testing.T) {
 	cfg := config.Config{}
-	_, err := toml.DecodeFile("D:/BMSTU/PPO/src/config/config.toml", &cfg)
+	_, err := toml.DecodeFile("./config.toml", &cfg)
 	if err != nil {
 		log.Fatal(err)
 	}
-	log, err := logger.InitLog("D:/BMSTU/PPO/src/logger/log.txt")
+	log, err := logger.InitLog("./log.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -67,11 +67,11 @@ func TestGetCommentsById(t *testing.T) {
 
 func TestCreateSerial(t *testing.T) {
 	cfg := config.Config{}
-	_, err := toml.DecodeFile("D:/BMSTU/PPO/src/config/config.toml", &cfg)
+	_, err := toml.DecodeFile("./config.toml", &cfg)
 	if err != nil {
 		log.Fatal(err)
 	}
-	log, err := logger.InitLog("D:/BMSTU/PPO/src/logger/log.txt")
+	log, err := logger.InitLog("./log.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -103,11 +103,11 @@ func TestCreateSerial(t *testing.T) {
 
 func TestUpdateSeasons(t *testing.T) {
 	cfg := config.Config{}
-	_, err := toml.DecodeFile("D:/BMSTU/PPO/src/config/config.toml", &cfg)
+	_, err := toml.DecodeFile("./config.toml", &cfg)
 	if err != nil {
 		log.Fatal(err)
 	}
-	log, err := logger.InitLog("D:/BMSTU/PPO/src/logger/log.txt")
+	log, err := logger.InitLog("./log.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -127,11 +127,11 @@ func TestUpdateSeasons(t *testing.T) {
 
 func TestDeleteEpisode(t *testing.T) {
 	cfg := config.Config{}
-	_, err := toml.DecodeFile("D:/BMSTU/PPO/src/config/config.toml", &cfg)
+	_, err := toml.DecodeFile("./config.toml", &cfg)
 	if err != nil {
 		log.Fatal(err)
 	}
-	log, err := logger.InitLog("D:/BMSTU/PPO/src/logger/log.txt")
+	log, err := logger.InitLog("./log.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
