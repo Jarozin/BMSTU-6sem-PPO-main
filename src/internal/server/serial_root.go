@@ -168,7 +168,7 @@ func (s *srv) serialTemplate(w http.ResponseWriter, r *http.Request, msg string)
 		s.addToHistory(iduser.(int), id)
 	}
 
-	tmpl, _ := template.ParseFiles("templates/serial/serial.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/serial/serial.html")
 	tmpl.Execute(w, d)
 }
 

@@ -19,7 +19,7 @@ func NewSerialsUsersRepoPostgres(db *sqlx.DB, log *logrus.Logger) *SerialsUsersR
 
 func (repo *SerialsUsersRepoPostgres) FormatDate(su *models.SerialsUsers) {
 	date := su.GetLastSeen()
-	d1, _ := time.Parse("2006-01-02T00:00:00Z", date)
+	d1, _ := time.Parse("2006-01-02", date)
 	d2 := d1.Format("02.01.2006")
 	su.SetLastSeen(d2)
 }
@@ -108,8 +108,8 @@ func (repo *SerialsUsersRepoPostgres) UpdateSerialsUsers(serialUser *models.Seri
 	}
 
 	repo.log.Info("Updating serials_users in the database")
-	_, err := repo.db.Exec("UPDATE serials_users SET su_idSerial=$1, su_idUser=$2 WHERE su_id=$3",
-		serialUser.GetIdSerial(), serialUser.GetIdUser(), serialUser.GetId())
+	_, err := repo.db.Exec("UPDATE serials_users SET su_idSerial=$1, su_idUser=$2, su_lastseen = $3 WHERE su_id=$4",
+		serialUser.GetIdSerial(), serialUser.GetIdUser(), serialUser.GetLastSeen(), serialUser.GetId())
 
 	if err != nil {
 		return err

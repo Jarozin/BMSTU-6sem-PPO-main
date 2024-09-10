@@ -22,7 +22,7 @@ import (
 
 func main() {
 	cfg := config.Config{}
-	_, err := toml.DecodeFile("config/config.toml", &cfg)
+	_, err := toml.DecodeFile("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/config/config.toml", &cfg)
 	if err != nil {
 		log_default.Fatal(err)
 	}

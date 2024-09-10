@@ -96,7 +96,7 @@ func (s *srv) adminCabinetTemplate(w http.ResponseWriter, msg string) {
 	type Success struct {
 		Msg string
 	}
-	tmpl, _ := template.ParseFiles("templates/admin/cabinet.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/cabinet.html")
 	scc := &Success{Msg: msg}
 	tmpl.Execute(w, scc)
 }
@@ -116,7 +116,7 @@ func (s *srv) addSerialTemplate(w http.ResponseWriter, err string) {
 		Err       string
 		Producers []*models.Producers
 	}
-	tmpl, _ := template.ParseFiles("templates/admin/addSerial.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/addSerial.html")
 	cerr := &addSerialErr{Err: err}
 	ctrl := controllers.NewProducersCtrl(repositories.NewProducersRepo(s.DB, s.Log))
 	producers, _ := ctrl.GetProducers()
@@ -185,7 +185,7 @@ func (s *srv) updateSerialTemplate(w http.ResponseWriter, err string, serial *mo
 	serials, _ := ctrl.GetSerials()
 	ctrlProducer := controllers.NewProducersCtrl(repositories.NewProducersRepo(s.DB, s.Log))
 	producers, _ := ctrlProducer.GetProducers()
-	tmpl, _ := template.ParseFiles("templates/admin/updateSerial.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/updateSerial.html")
 	cerr := &updateSerialErr{Err: err, Serials: serials, S: serial, Producers: producers}
 	tmpl.Execute(w, cerr)
 }
@@ -255,7 +255,7 @@ func (s *srv) deleteSerialTemplate(w http.ResponseWriter, err string) {
 	}
 	ctrl := controllers.NewSerialsCtrl(repositories.NewSerialsRepo(s.DB, s.Log))
 	serials, _ := ctrl.GetSerials()
-	tmpl, _ := template.ParseFiles("templates/admin/deleteSerial.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/deleteSerial.html")
 	cerr := &deleteSerialErr{Err: err, Serials: serials}
 	tmpl.Execute(w, cerr)
 }
@@ -289,7 +289,7 @@ func (s *srv) addProducerTemplate(w http.ResponseWriter, err string) {
 	type addProducerErr struct {
 		Err string
 	}
-	tmpl, _ := template.ParseFiles("templates/admin/addProducer.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/addProducer.html")
 	cerr := &addProducerErr{Err: err}
 	tmpl.Execute(w, cerr)
 }
@@ -333,7 +333,7 @@ func (s *srv) updateProducerTemplate(w http.ResponseWriter, err string, producer
 	}
 	ctrl := controllers.NewProducersCtrl(repositories.NewProducersRepo(s.DB, s.Log))
 	producers, _ := ctrl.GetProducers()
-	tmpl, _ := template.ParseFiles("templates/admin/updateProducer.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/updateProducer.html")
 	cerr := &updateProducerErr{Err: err, Producers: producers, P: producer}
 	tmpl.Execute(w, cerr)
 }
@@ -384,7 +384,7 @@ func (s *srv) deleteProducerTemplate(w http.ResponseWriter, err string) {
 	}
 	ctrl := controllers.NewProducersCtrl(repositories.NewProducersRepo(s.DB, s.Log))
 	producers, _ := ctrl.GetProducers()
-	tmpl, _ := template.ParseFiles("templates/admin/deleteProducer.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/deleteProducer.html")
 	cerr := &deleteProducerErr{Err: err, Producers: producers}
 	tmpl.Execute(w, cerr)
 }
@@ -421,7 +421,7 @@ func (s *srv) addActorTemplate(w http.ResponseWriter, err string) {
 	}
 	ctrl := controllers.NewSerialsCtrl(repositories.NewSerialsRepo(s.DB, s.Log))
 	serials, _ := ctrl.GetSerials()
-	tmpl, _ := template.ParseFiles("templates/admin/addActor.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/addActor.html")
 	cerr := &addActorErr{Err: err, Serials: serials}
 	tmpl.Execute(w, cerr)
 }
@@ -491,7 +491,7 @@ func (s *srv) updateActorTemplate(w http.ResponseWriter, err string, actor *mode
 	actors, _ := ctrl.GetActors()
 	ctrlSerial := controllers.NewSerialsCtrl(repositories.NewSerialsRepo(s.DB, s.Log))
 	serials, _ := ctrlSerial.GetSerials()
-	tmpl, _ := template.ParseFiles("templates/admin/updateActor.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/updateActor.html")
 	cerr := &updateActorErr{Err: err, Actors: actors, A: actor, Serials: serials}
 	tmpl.Execute(w, cerr)
 }
@@ -543,7 +543,7 @@ func (s *srv) deleteActorTemplate(w http.ResponseWriter, err string) {
 	}
 	ctrl := controllers.NewActorsCtrl(repositories.NewActorsRepo(s.DB, s.Log))
 	actors, _ := ctrl.GetActors()
-	tmpl, _ := template.ParseFiles("templates/admin/deleteActor.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/deleteActor.html")
 	cerr := &deleteActorErr{Err: err, Actors: actors}
 	tmpl.Execute(w, cerr)
 }
@@ -577,7 +577,7 @@ func (s *srv) HandleShowUsers() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		ctrl := controllers.NewUsersCtrl(repositories.NewUsersRepo(s.DB, s.Log), repositories.NewFavouritesRepo(s.DB, s.Log))
 		users, _ := ctrl.GetUsers()
-		tmpl, _ := template.ParseFiles("templates/admin/showUsers.html")
+		tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/showUsers.html")
 		tmpl.Execute(w, users)
 	}
 }
@@ -599,7 +599,7 @@ func (s *srv) grantAdminTemplate(w http.ResponseWriter, err string) {
 	}
 	ctrl := controllers.NewUsersCtrl(repositories.NewUsersRepo(s.DB, s.Log), repositories.NewFavouritesRepo(s.DB, s.Log))
 	users, _ := ctrl.GetUsers()
-	tmpl, _ := template.ParseFiles("templates/admin/grantAdmin.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/grantAdmin.html")
 	cerr := &grantAdminErr{Err: err, Users: users}
 	tmpl.Execute(w, cerr)
 }
@@ -649,7 +649,7 @@ func (s *srv) deleteUserTemplate(w http.ResponseWriter, err string) {
 	}
 	ctrl := controllers.NewUsersCtrl(repositories.NewUsersRepo(s.DB, s.Log), repositories.NewFavouritesRepo(s.DB, s.Log))
 	users, _ := ctrl.GetUsers()
-	tmpl, _ := template.ParseFiles("templates/admin/deleteUser.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/deleteUser.html")
 	cerr := &deleteUserErr{Err: err, Users: users}
 	tmpl.Execute(w, cerr)
 }
@@ -721,7 +721,7 @@ func (s *srv) addSerialActorTemplate(w http.ResponseWriter, err string) {
 	serials, _ := ctrl.GetSerials()
 	ctrlA := controllers.NewActorsCtrl(repositories.NewActorsRepo(s.DB, s.Log))
 	actors, _ := ctrlA.GetActors()
-	tmpl, _ := template.ParseFiles("templates/admin/addSerialActor.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/addSerialActor.html")
 	cerr := &addSerialActorErr{Err: err, Serial: serials, Actors: actors}
 	tmpl.Execute(w, cerr)
 }
@@ -754,7 +754,7 @@ func (s *srv) HandleShowStatistics() http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		ctrl := controllers.NewStatisticCtrl(repositories.NewStatisticRepo(s.DB, s.Log))
 		statistic, _ := ctrl.GetStatistic()
-		tmpl, _ := template.ParseFiles("templates/admin/showStatistics.html")
+		tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/showStatistics.html")
 		tmpl.Execute(w, statistic)
 	}
 }

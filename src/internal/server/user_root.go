@@ -79,7 +79,7 @@ func (s *srv) userCabinetTemplate(w http.ResponseWriter, r *http.Request, msg st
 		User: user,
 	}
 
-	tmpl, _ := template.ParseFiles("templates/user/cabinet.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/user/cabinet.html")
 	tmpl.Execute(w, d)
 }
 
@@ -111,7 +111,7 @@ func (s *srv) HandleCompareSerials() http.HandlerFunc {
 			}
 			d.Serials = serials
 		}
-		tmpl, _ := template.ParseFiles("templates/user/compare.html")
+		tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/user/compare.html")
 		tmpl.Execute(w, d)
 	}
 }
@@ -142,7 +142,7 @@ func (s *srv) HandleFavourites() http.HandlerFunc {
 			d.Favourites = append(d.Favourites, s)
 		}
 
-		tmpl, _ := template.ParseFiles("templates/user/favourites.html")
+		tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/user/favourites.html")
 		tmpl.Execute(w, d)
 	}
 }
@@ -194,7 +194,7 @@ func (s *srv) addCommentTemplate(w http.ResponseWriter, msg string) {
 	}
 	d := &Data{Err: msg, Serials: serials}
 
-	tmpl, _ := template.ParseFiles("templates/user/addComment.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/user/addComment.html")
 	tmpl.Execute(w, d)
 }
 
@@ -280,7 +280,7 @@ func (s *srv) updateCommentTemplate(w http.ResponseWriter, r *http.Request, msg 
 	}
 	d := &Data{Err: msg, SC: serialscomments, C: comment_prev}
 
-	tmpl, _ := template.ParseFiles("templates/user/updateComment.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/user/updateComment.html")
 	tmpl.Execute(w, d)
 }
 
@@ -359,7 +359,7 @@ func (s *srv) deleteCommentTemplate(w http.ResponseWriter, r *http.Request, msg 
 	}
 	d := &deleteCommentErr{Err: msg, Serials: serials}
 
-	tmpl, _ := template.ParseFiles("templates/user/deleteComment.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/user/deleteComment.html")
 	tmpl.Execute(w, d)
 }
 
@@ -412,7 +412,7 @@ func (s *srv) updateProfileTemplate(w http.ResponseWriter, r *http.Request, msg 
 	}
 	d := &Data{Err: msg, User: user}
 
-	tmpl, _ := template.ParseFiles("templates/user/updateProfile.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/user/updateProfile.html")
 	tmpl.Execute(w, d)
 }
 
@@ -517,7 +517,7 @@ func (s *srv) HandleHistory() http.HandlerFunc {
 			d.History = append(d.History, dat)
 		}
 
-		tmpl, _ := template.ParseFiles("templates/user/history.html")
+		tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/user/history.html")
 		tmpl.Execute(w, d)
 	}
 }

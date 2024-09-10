@@ -98,7 +98,7 @@ func (s *srv) HandleSearch() http.HandlerFunc {
 			s.Log.Error(err)
 			return
 		}
-		tmpl, _ := template.ParseFiles("templates/search.html")
+		tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/search.html")
 		tmpl.Execute(w, serials)
 	}
 }
@@ -110,7 +110,7 @@ func (s *srv) HandleStart() http.HandlerFunc {
 		if err != nil {
 			log.Fatal(err)
 		}
-		tmpl, _ := template.ParseFiles("templates/index.html")
+		tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/index.html")
 		tmpl.Execute(w, serials)
 	}
 }
@@ -137,7 +137,7 @@ func (s *srv) loginTemplate(w http.ResponseWriter, err error) {
 	type loginErr struct {
 		Err string
 	}
-	tmpl, _ := template.ParseFiles("templates/login.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/login.html")
 	lerr := &loginErr{}
 	switch err {
 	case nil:
@@ -188,7 +188,7 @@ func (s *srv) creationTemplate(w http.ResponseWriter, err string) {
 	type creationErr struct {
 		Err string
 	}
-	tmpl, _ := template.ParseFiles("templates/user/create.html")
+	tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/user/create.html")
 	cerr := &creationErr{Err: err}
 	tmpl.Execute(w, cerr)
 }
