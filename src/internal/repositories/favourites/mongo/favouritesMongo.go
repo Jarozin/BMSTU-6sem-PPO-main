@@ -3,6 +3,7 @@ package mongo
 import (
 	"app/internal/models"
 	"context"
+	"fmt"
 	"strconv"
 	"time"
 
@@ -83,6 +84,8 @@ func (repo *FavouritesRepoMongo) CreateFavourite(favourite *models.Favourites) (
 	if err != nil {
 		return 0, err
 	}
+
+	fmt.Println(result.InsertedID.(primitive.ObjectID).Hex())
 	res, _ := strconv.Atoi(result.InsertedID.(primitive.ObjectID).Hex())
 	favourite.SetId(res)
 

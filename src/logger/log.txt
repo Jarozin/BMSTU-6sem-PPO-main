@@ -645,3 +645,55 @@
 [2024-09-10 21:57:17] [info] [usersCtrl.go:24] Getting user by id from the database
 [2024-09-10 21:57:21] [info] [serialsCtrl.go:18] Getting all serials from the database
 [2024-09-10 21:57:21] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-10 22:39:32] [info] [main.go:29] Logger initialized
+[2024-09-10 22:39:32] [info] [proc.go:271] Successfully connected to Postgres
+[2024-09-10 22:39:46] [info] [main.go:29] Logger initialized
+[2024-09-10 22:39:46] [fatal] [proc.go:271] connection() error occurred during connection handshake: auth error: unable to authenticate using mechanism "SCRAM-SHA-256": (AuthenticationFailed) Authentication failed.
+[2024-09-10 22:40:13] [info] [main.go:29] Logger initialized
+[2024-09-10 22:40:13] [info] [proc.go:271] Successfully connected to MongoDB
+[2024-09-10 22:40:13] [fatal] [proc.go:271] listen tcp :3000: bind: address already in use
+[2024-09-10 22:40:19] [info] [main.go:29] Logger initialized
+[2024-09-10 22:40:19] [info] [proc.go:271] Successfully connected to MongoDB
+[2024-09-10 22:40:29] [info] [usersCtrl.go:64] Getting user by login from the database
+[2024-09-10 22:40:44] [info] [usersCtrl.go:28] Checking user by login from the database
+[2024-09-10 22:40:44] [info] [usersMongo.go:185] Getting user by login from the database
+[2024-09-10 22:40:44] [info] [usersCtrl.go:31] Creating favourite in the database
+[2024-09-10 22:40:44] [info] [usersCtrl.go:38] Deleting favourite from the database
+[2024-09-10 22:41:01] [info] [usersCtrl.go:28] Checking user by login from the database
+[2024-09-10 22:41:01] [info] [usersMongo.go:185] Getting user by login from the database
+[2024-09-10 22:41:01] [info] [usersCtrl.go:31] Creating favourite in the database
+[2024-09-10 22:41:01] [info] [usersCtrl.go:38] Deleting favourite from the database
+[2024-09-10 22:41:23] [info] [main.go:29] Logger initialized
+[2024-09-10 22:41:29] [info] [proc.go:271] Successfully connected to MongoDB
+[2024-09-10 22:41:31] [fatal] [proc.go:271] listen tcp :3000: bind: address already in use
+[2024-09-10 22:42:48] [info] [main.go:29] Logger initialized
+[2024-09-10 22:42:51] [info] [proc.go:271] Successfully connected to MongoDB
+[2024-09-10 22:43:52] [info] [usersCtrl.go:28] Checking user by login from the database
+[2024-09-10 22:43:52] [info] [usersMongo.go:185] Getting user by login from the database
+[2024-09-10 22:43:55] [info] [usersCtrl.go:31] Creating favourite in the database
+[2024-09-10 22:49:13] [info] [main.go:29] Logger initialized
+[2024-09-10 22:49:13] [info] [proc.go:271] Successfully connected to MongoDB
+[2024-09-10 22:49:26] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-10 22:49:26] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-10 22:49:47] [info] [usersCtrl.go:28] Checking user by login from the database
+[2024-09-10 22:49:47] [info] [usersMongo.go:185] Getting user by login from the database
+[2024-09-10 22:49:47] [info] [usersCtrl.go:31] Creating favourite in the database
+[2024-09-10 22:49:47] [info] [usersCtrl.go:38] Deleting favourite from the database
+[2024-09-10 22:50:38] [info] [usersCtrl.go:28] Checking user by login from the database
+[2024-09-10 22:50:38] [info] [usersMongo.go:185] Getting user by login from the database
+[2024-09-10 22:50:40] [info] [usersCtrl.go:31] Creating favourite in the database
+[2024-09-10 22:50:54] [info] [usersCtrl.go:38] Deleting favourite from the database
+[2024-09-10 22:51:11] [info] [usersCtrl.go:28] Checking user by login from the database
+[2024-09-10 22:51:11] [info] [usersMongo.go:185] Getting user by login from the database
+[2024-09-10 22:51:18] [info] [usersCtrl.go:31] Creating favourite in the database
+[2024-09-10 23:03:14] [info] [usersCtrl.go:38] Deleting favourite from the database
+[2024-09-10 23:03:34] [info] [usersCtrl.go:28] Checking user by login from the database
+[2024-09-10 23:03:34] [info] [usersMongo.go:185] Getting user by login from the database
+[2024-09-10 23:03:34] [info] [usersCtrl.go:31] Creating favourite in the database
+[2024-09-10 23:03:34] [info] [usersCtrl.go:38] Deleting favourite from the database
+[2024-09-10 23:03:57] [info] [main.go:29] Logger initialized
+[2024-09-10 23:03:57] [info] [proc.go:271] Successfully connected to MongoDB
+[2024-09-10 23:04:03] [info] [usersCtrl.go:28] Checking user by login from the database
+[2024-09-10 23:04:03] [info] [usersMongo.go:185] Getting user by login from the database
+[2024-09-10 23:04:03] [info] [usersCtrl.go:31] Creating favourite in the database
+[2024-09-10 23:04:03] [info] [usersCtrl.go:38] Deleting favourite from the database
