@@ -697,3 +697,17 @@
 [2024-09-10 23:04:03] [info] [usersMongo.go:185] Getting user by login from the database
 [2024-09-10 23:04:03] [info] [usersCtrl.go:31] Creating favourite in the database
 [2024-09-10 23:04:03] [info] [usersCtrl.go:38] Deleting favourite from the database
+[2024-09-11 00:13:45] [info] [main.go:29] Logger initialized
+[2024-09-11 00:13:45] [info] [proc.go:271] Successfully connected to MongoDB
+[2024-09-11 00:13:56] [info] [usersCtrl.go:28] Checking user by login from the database
+[2024-09-11 00:13:56] [info] [usersMongo.go:185] Getting user by login from the database
+[2024-09-11 00:13:56] [info] [usersCtrl.go:31] Creating favourite in the database
+[2024-09-11 00:13:56] [info] [usersCtrl.go:38] Deleting favourite from the database
+[2024-09-11 00:14:01] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-11 00:14:03] [info] [usersCtrl.go:64] Getting user by login from the database
+[2024-09-11 00:14:08] [info] [serialsCtrl.go:42] Getting serial by title from the database
+[2024-09-11 00:14:08] [info] [serialsCtrl.go:42] Getting serial by title from the database
+[2024-09-11 01:39:35] [info] [main.go:29] Logger initialized
+[2024-09-11 01:39:45] [info] [proc.go:271] Successfully connected to MongoDB
+[2024-09-11 17:42:22] [info] [main.go:29] Logger initialized
+[2024-09-11 17:42:32] [fatal] [proc.go:271] server selection error: context deadline exceeded, current topology: { Type: ReplicaSetNoPrimary, Servers: [{ Addr: cluster0-shard-00-01.rv1dp.mongodb.net:27017, Type: Unknown, Last error: remote error: tls: internal error }, { Addr: cluster0-shard-00-00.rv1dp.mongodb.net:27017, Type: Unknown, Last error: remote error: tls: internal error }, { Addr: cluster0-shard-00-02.rv1dp.mongodb.net:27017, Type: Unknown, Last error: remote error: tls: internal error }, ] }

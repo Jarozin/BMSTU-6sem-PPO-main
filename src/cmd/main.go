@@ -48,7 +48,7 @@ func main() {
 			ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 			defer cancel()
 
-			client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb://myUserAdmin:admin@localhost:27017/?retryWrites=true&w=majority")) //"mongodb+srv://kkorsy:5454038mmm@cluster0.xje41xy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"))
+			client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb+srv://7303misha:7303misha@cluster0.rv1dp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"))
 			if err != nil {
 				log.Fatal(err)
 			}
