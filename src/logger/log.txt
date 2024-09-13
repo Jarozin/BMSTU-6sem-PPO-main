@@ -876,3 +876,95 @@
 [2024-09-13 18:17:11] [info] [producersCtrl.go:17] Getting all producers from the database
 [2024-09-13 18:17:11] [info] [serialsCtrl.go:18] Getting all serials from the database
 [2024-09-13 18:17:11] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 18:31:12] [info] [main.go:27] Logger initialized
+[2024-09-13 18:31:12] [info] [proc.go:271] Successfully connected to Postgres
+[2024-09-13 18:31:12] [info] [server.go:41] Acessing HandleStart
+[2024-09-13 18:31:12] [info] [server.go:42] Acessing HandleSearch
+[2024-09-13 18:31:12] [info] [server.go:43] Acessing HandleLogin
+[2024-09-13 18:31:12] [info] [server.go:44] Acessing HandleCreateUser
+[2024-09-13 18:31:12] [info] [server.go:47] Acessing HandleSerial
+[2024-09-13 18:31:12] [info] [server.go:51] Acessing HandleUserCabinet
+[2024-09-13 18:31:12] [info] [server.go:52] Acessing HandleExit
+[2024-09-13 18:31:12] [info] [server.go:53] Acessing HandleAddComment
+[2024-09-13 18:31:12] [info] [server.go:54] Acessing HandleUpdateComment
+[2024-09-13 18:31:12] [info] [server.go:55] Acessing HandleDeleteComment
+[2024-09-13 18:31:12] [info] [server.go:56] Acessing HandleFavourites
+[2024-09-13 18:31:12] [info] [server.go:57] Acessing HandleDeleteFavourite
+[2024-09-13 18:31:12] [info] [server.go:58] Acessing HandleHistory
+[2024-09-13 18:31:12] [info] [server.go:59] Acessing HandleClearHistory
+[2024-09-13 18:31:12] [info] [server.go:60] Acessing HandleCompareSerials
+[2024-09-13 18:31:12] [info] [server.go:61] Acessing HandleUpdateProfile
+[2024-09-13 18:31:12] [info] [server.go:66] Acessing HandleExit
+[2024-09-13 18:31:12] [info] [server.go:67] Acessing HandleAddSerial
+[2024-09-13 18:31:12] [info] [server.go:68] Acessing HandleUpdateSerial
+[2024-09-13 18:31:12] [info] [server.go:69] Acessing HandleDeleteSerial
+[2024-09-13 18:31:12] [info] [server.go:70] Acessing HandleAddSerialActor
+[2024-09-13 18:31:12] [info] [server.go:71] Acessing HandleAddActor
+[2024-09-13 18:31:12] [info] [server.go:72] Acessing HandleUpdateActor
+[2024-09-13 18:31:12] [info] [server.go:73] Acessing HandleDeleteActor
+[2024-09-13 18:31:12] [info] [server.go:74] Acessing HandleAddProducer
+[2024-09-13 18:31:12] [info] [server.go:75] Acessing HandleUpdateProducer
+[2024-09-13 18:31:12] [info] [server.go:76] Acessing HandleDeleteProducer
+[2024-09-13 18:31:12] [info] [server.go:77] Acessing HandleShowUsers
+[2024-09-13 18:31:12] [info] [server.go:78] Acessing HandleDeleteUser
+[2024-09-13 18:31:12] [info] [server.go:79] Acessing HandleGrantAdmin
+[2024-09-13 18:31:12] [info] [server.go:80] Acessing HandleShowStatistics
+[2024-09-13 18:31:12] [fatal] [proc.go:271] listen tcp :3000: bind: address already in use
+[2024-09-13 18:31:16] [info] [main.go:27] Logger initialized
+[2024-09-13 18:31:16] [info] [proc.go:271] Successfully connected to Postgres
+[2024-09-13 18:31:16] [info] [server.go:41] Acessing HandleStart
+[2024-09-13 18:31:16] [info] [server.go:42] Acessing HandleSearch
+[2024-09-13 18:31:16] [info] [server.go:43] Acessing HandleLogin
+[2024-09-13 18:31:16] [info] [server.go:44] Acessing HandleCreateUser
+[2024-09-13 18:31:16] [info] [server.go:47] Acessing HandleSerial
+[2024-09-13 18:31:16] [info] [server.go:51] Acessing HandleUserCabinet
+[2024-09-13 18:31:16] [info] [server.go:52] Acessing HandleExit
+[2024-09-13 18:31:16] [info] [server.go:53] Acessing HandleAddComment
+[2024-09-13 18:31:16] [info] [server.go:54] Acessing HandleUpdateComment
+[2024-09-13 18:31:16] [info] [server.go:55] Acessing HandleDeleteComment
+[2024-09-13 18:31:16] [info] [server.go:56] Acessing HandleFavourites
+[2024-09-13 18:31:16] [info] [server.go:57] Acessing HandleDeleteFavourite
+[2024-09-13 18:31:16] [info] [server.go:58] Acessing HandleHistory
+[2024-09-13 18:31:16] [info] [server.go:59] Acessing HandleClearHistory
+[2024-09-13 18:31:16] [info] [server.go:60] Acessing HandleCompareSerials
+[2024-09-13 18:31:16] [info] [server.go:61] Acessing HandleUpdateProfile
+[2024-09-13 18:31:16] [info] [server.go:66] Acessing HandleExit
+[2024-09-13 18:31:16] [info] [server.go:67] Acessing HandleAddSerial
+[2024-09-13 18:31:16] [info] [server.go:68] Acessing HandleUpdateSerial
+[2024-09-13 18:31:16] [info] [server.go:69] Acessing HandleDeleteSerial
+[2024-09-13 18:31:16] [info] [server.go:70] Acessing HandleAddSerialActor
+[2024-09-13 18:31:16] [info] [server.go:71] Acessing HandleAddActor
+[2024-09-13 18:31:16] [info] [server.go:72] Acessing HandleUpdateActor
+[2024-09-13 18:31:16] [info] [server.go:73] Acessing HandleDeleteActor
+[2024-09-13 18:31:16] [info] [server.go:74] Acessing HandleAddProducer
+[2024-09-13 18:31:16] [info] [server.go:75] Acessing HandleUpdateProducer
+[2024-09-13 18:31:16] [info] [server.go:76] Acessing HandleDeleteProducer
+[2024-09-13 18:31:16] [info] [server.go:77] Acessing HandleShowUsers
+[2024-09-13 18:31:16] [info] [server.go:78] Acessing HandleDeleteUser
+[2024-09-13 18:31:16] [info] [server.go:79] Acessing HandleGrantAdmin
+[2024-09-13 18:31:16] [info] [server.go:80] Acessing HandleShowStatistics
+[2024-09-13 18:35:39] [info] [main.go:27] Logger initialized
+[2024-09-13 18:35:39] [info] [proc.go:271] Successfully connected to Postgres
+[2024-09-13 18:35:39] [fatal] [proc.go:271] listen tcp :3000: bind: address already in use
+[2024-09-13 18:35:42] [info] [main.go:27] Logger initialized
+[2024-09-13 18:35:42] [info] [proc.go:271] Successfully connected to Postgres
+[2024-09-13 18:35:48] [info] [server.go:2166] Acessing HandleUpdateSerial
+[2024-09-13 18:35:48] [info] [serialsCtrl.go:22] Getting serial by id from the database
+[2024-09-13 18:35:48] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:35:48] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 18:35:48] [info] [server.go:2166] Acessing HandleUpdateSerial
+[2024-09-13 18:35:48] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:35:48] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 18:35:50] [info] [server.go:2166] Acessing HandleUpdateSerial
+[2024-09-13 18:35:50] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:35:50] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 18:35:50] [info] [server.go:2166] Acessing HandleUpdateSerial
+[2024-09-13 18:35:50] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:35:50] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 18:35:50] [info] [server.go:2166] Acessing HandleUpdateSerial
+[2024-09-13 18:35:50] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:35:50] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 18:35:53] [info] [server.go:2166] Acessing HandleStart
+[2024-09-13 18:35:53] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:35:53] [info] [server.go:2166] Acessing HandleStart
+[2024-09-13 18:35:53] [info] [serialsCtrl.go:18] Getting all serials from the database

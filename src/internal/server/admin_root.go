@@ -103,8 +103,8 @@ func (s *srv) adminCabinetTemplate(w http.ResponseWriter, msg string) {
 }
 
 func (s *srv) HandleAddSerial() http.HandlerFunc {
-	s.Log.Info("Acessing HandleAddSerial")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleAddSerial")
 		if r.Method == http.MethodPost {
 			s.AcceptAddSerial(w, r)
 			return
@@ -127,8 +127,8 @@ func (s *srv) addSerialTemplate(w http.ResponseWriter, err string) {
 }
 
 func (s *srv) AcceptAddSerial(w http.ResponseWriter, r *http.Request) {
-	s.Log.Info("Acessing add serial")
 	ctrl := controllers.NewSerialsCtrl(repositories.NewSerialsRepo(s.DB, s.Log))
+	s.Log.Info("Acessing add serial")
 	serial := &models.Serial{
 		S_name:        r.FormValue("name"),
 		S_description: r.FormValue("description"),
@@ -165,8 +165,8 @@ func (s *srv) AcceptAddSerial(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleUpdateSerial() http.HandlerFunc {
-	s.Log.Info("Acessing HandleUpdateSerial")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleUpdateSerial")
 		if r.Method == http.MethodPost && r.FormValue("id") != "" {
 			s.AcceptUpdateSerial(w, r)
 			return
@@ -243,8 +243,8 @@ func (s *srv) AcceptUpdateSerial(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleDeleteSerial() http.HandlerFunc {
-	s.Log.Info("Acessing HandleDeleteSerial")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleDeleteSerial")
 		if r.Method == http.MethodPost {
 			s.AcceptDeleteSerial(w, r)
 			return
@@ -281,8 +281,8 @@ func (s *srv) AcceptDeleteSerial(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleAddProducer() http.HandlerFunc {
-	s.Log.Info("Acessing HandleAddProducer")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleAddProducer")
 		if r.Method == http.MethodPost {
 			s.AcceptAddProducer(w, r)
 			return
@@ -319,8 +319,8 @@ func (s *srv) AcceptAddProducer(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleUpdateProducer() http.HandlerFunc {
-	s.Log.Info("Acessing HandleUpdateProducer")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleUpdateProducer")
 		if r.Method == http.MethodPost && r.FormValue("id") != "" {
 			s.AcceptUpdateProducer(w, r)
 			return
@@ -375,8 +375,8 @@ func (s *srv) AcceptUpdateProducer(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleDeleteProducer() http.HandlerFunc {
-	s.Log.Info("Acessing HandleDeleteProducer")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleDeleteProducer")
 		if r.Method == http.MethodPost {
 			s.AcceptDeleteProducer(w, r)
 			return
@@ -413,8 +413,8 @@ func (s *srv) AcceptDeleteProducer(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleAddActor() http.HandlerFunc {
-	s.Log.Info("Acessing HandleAddActor")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleAddActor")
 		if r.Method == http.MethodPost {
 			s.AcceptAddActor(w, r)
 			return
@@ -477,8 +477,8 @@ func (s *srv) AcceptAddActor(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleUpdateActor() http.HandlerFunc {
-	s.Log.Info("Acessing HandleUpdateActor")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleUpdateActor")
 		if r.Method == http.MethodPost && r.FormValue("id") != "" {
 			s.AcceptUpdateActor(w, r)
 			return
@@ -537,8 +537,8 @@ func (s *srv) AcceptUpdateActor(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleDeleteActor() http.HandlerFunc {
-	s.Log.Info("Acessing HandleDeleteActor")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleDeleteActor")
 		if r.Method == http.MethodPost {
 			s.AcceptDeleteActor(w, r)
 			return
@@ -585,8 +585,8 @@ func (s *srv) AcceptDeleteActor(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleShowUsers() http.HandlerFunc {
-	s.Log.Info("Acessing HandleShowUsers")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleShowUsers")
 		ctrl := controllers.NewUsersCtrl(repositories.NewUsersRepo(s.DB, s.Log), repositories.NewFavouritesRepo(s.DB, s.Log))
 		users, _ := ctrl.GetUsers()
 		tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/showUsers.html")
@@ -595,8 +595,8 @@ func (s *srv) HandleShowUsers() http.HandlerFunc {
 }
 
 func (s *srv) HandleGrantAdmin() http.HandlerFunc {
-	s.Log.Info("Acessing HandleGrantAdmin")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleGrantAdmin")
 		if r.Method == http.MethodPost {
 			s.AcceptGrantAdmin(w, r)
 			return
@@ -646,8 +646,8 @@ func (s *srv) AcceptGrantAdmin(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleDeleteUser() http.HandlerFunc {
-	s.Log.Info("Acessing HandleDeleteUser")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleDeleteUser")
 		if r.Method == http.MethodPost {
 			s.AcceptDeleteUser(w, r)
 			return
@@ -716,8 +716,8 @@ func (s *srv) AcceptDeleteUser(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleAddSerialActor() http.HandlerFunc {
-	s.Log.Info("Acessing HandleAddSerialActor")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleAddSerialActor")
 		if r.Method == http.MethodPost {
 			s.AcceptAddSerialActor(w, r)
 			return
@@ -767,8 +767,8 @@ func (s *srv) AcceptAddSerialActor(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleShowStatistics() http.HandlerFunc {
-	s.Log.Info("Acessing HandleShowStatistics")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleShowStatistics")
 		ctrl := controllers.NewStatisticCtrl(repositories.NewStatisticRepo(s.DB, s.Log))
 		statistic, _ := ctrl.GetStatistic()
 		tmpl, _ := template.ParseFiles("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/internal/templates/admin/showStatistics.html")

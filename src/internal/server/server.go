@@ -82,8 +82,8 @@ func (s *srv) InitRouter() {
 }
 
 func (s *srv) HandleExit() http.HandlerFunc {
-	s.Log.Info("Acessing HandleExit")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleExit")
 		session, _ := s.session.Get(r, "sname")
 		delete(session.Values, "user")
 		delete(session.Values, "admin")
@@ -93,8 +93,8 @@ func (s *srv) HandleExit() http.HandlerFunc {
 }
 
 func (s *srv) HandleSearch() http.HandlerFunc {
-	s.Log.Info("Acessing HandleSearch")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleSearch")
 		ctrl := controllers.NewSerialsCtrl(repositories.NewSerialsRepo(s.DB, s.Log))
 		serials, err := ctrl.GetSerialByTitle(r.FormValue("search"))
 		if err != nil {
@@ -107,8 +107,8 @@ func (s *srv) HandleSearch() http.HandlerFunc {
 }
 
 func (s *srv) HandleStart() http.HandlerFunc {
-	s.Log.Info("Acessing HandleStart")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleStart")
 		ctrl := controllers.NewSerialsCtrl(repositories.NewSerialsRepo(s.DB, s.Log))
 		serials, err := ctrl.GetSerials()
 		if err != nil {
@@ -120,8 +120,8 @@ func (s *srv) HandleStart() http.HandlerFunc {
 }
 
 func (s *srv) HandleLogin() http.HandlerFunc {
-	s.Log.Info("Acessing HandleLogin")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleLogin")
 		session, _ := s.session.Get(r, "sname")
 		if session.Values["user"] != nil {
 			http.Redirect(w, r, "/user/cabinet/0", http.StatusMovedPermanently)
@@ -180,8 +180,8 @@ func (s *srv) Auth(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleCreateUser() http.HandlerFunc {
-	s.Log.Info("Acessing HandleCreateUser")
 	return func(w http.ResponseWriter, r *http.Request) {
+		s.Log.Info("Acessing HandleCreateUser")
 		if r.Method == http.MethodPost {
 			s.AcceptUserCreation(w, r)
 			return
