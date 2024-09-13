@@ -1,8 +1,7 @@
 package mocks
 
 import (
-	"app/internal/models"
-
+	"github.com/Jarozin/models"
 	"github.com/stretchr/testify/mock"
 )
 

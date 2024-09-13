@@ -1,11 +1,11 @@
 package unit_test
 
 import (
+	"app/internal/mocks"
 	"testing"
 
-	"app/internal/controllers"
-	"app/internal/mocks"
-	"app/internal/models"
+	controllers "github.com/Jarozin/controllers2"
+	"github.com/Jarozin/models"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

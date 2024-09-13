@@ -2,12 +2,13 @@ package integration_test
 
 import (
 	"app/config"
-	"app/internal/controllers"
-	"app/internal/models"
-	"app/internal/repositories"
 	"app/logger"
 	"log"
 	"testing"
+
+	controllers "github.com/Jarozin/controllers2"
+	"github.com/Jarozin/models"
+	repositories "github.com/Jarozin/repository"
 
 	"github.com/BurntSushi/toml"
 	"github.com/jmoiron/sqlx"

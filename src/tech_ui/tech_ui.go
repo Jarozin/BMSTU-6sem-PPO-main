@@ -1,9 +1,10 @@
 package tech_ui
 
 import (
-	"app/internal/controllers"
-	"app/internal/models"
-	"app/internal/repositories"
+	controllers "github.com/Jarozin/controllers2"
+	"github.com/Jarozin/models"
+	repositories "github.com/Jarozin/repository"
+
 	"fmt"
 	"time"
 

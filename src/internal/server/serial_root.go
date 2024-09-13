@@ -1,14 +1,15 @@
 package server
 
 import (
-	"app/internal/controllers"
-	"app/internal/models"
-	"app/internal/repositories"
 	"errors"
 	"net/http"
 	"strconv"
 	"text/template"
 	"time"
+
+	controllers "github.com/Jarozin/controllers2"
+	"github.com/Jarozin/models"
+	repositories "github.com/Jarozin/repository"
 
 	"github.com/gorilla/mux"
 )

@@ -1,8 +1,8 @@
 package mocks
 
 import (
-	"app/internal/controllers"
-	"app/internal/models"
+	controllers "github.com/Jarozin/controllers2"
+	"github.com/Jarozin/models"
 
 	"github.com/stretchr/testify/mock"
 	"golang.org/x/crypto/bcrypt"
