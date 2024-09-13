@@ -69,8 +69,6 @@ func main() {
 		}
 	}
 
-	// tech_ui.Run(db, log)
-
 	s := server.NewServer(log, db, cfg.SessionKey)
 
 	err = http.ListenAndServe(cfg.Port, s)

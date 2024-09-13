@@ -25,7 +25,6 @@ require (
 
 require (
 	github.com/BurntSushi/toml v1.3.2
-	github.com/Jarozin/controllers v0.1.0
 	github.com/Jarozin/controllers2 v0.1.0
 	github.com/Jarozin/models v0.1.0
 	github.com/Jarozin/repository v0.1.0

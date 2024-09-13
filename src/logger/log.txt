@@ -968,3 +968,37 @@
 [2024-09-13 18:35:53] [info] [serialsCtrl.go:18] Getting all serials from the database
 [2024-09-13 18:35:53] [info] [server.go:2166] Acessing HandleStart
 [2024-09-13 18:35:53] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 19:15:25] [info] [main.go:27] Logger initialized
+[2024-09-13 19:15:25] [info] [proc.go:271] Successfully connected to Postgres
+[2024-09-13 19:15:27] [info] [server.go:2166] Acessing HandleLogin
+[2024-09-13 19:15:28] [info] [server.go:2166] Acessing HandleAddSerial
+[2024-09-13 19:15:28] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 19:15:28] [info] [server.go:2166] Acessing HandleAddSerial
+[2024-09-13 19:15:28] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 19:15:51] [info] [server.go:2166] Acessing HandleAddSerial
+[2024-09-13 19:15:51] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 19:15:51] [info] [server.go:2166] Acessing HandleAddSerial
+[2024-09-13 19:15:51] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 19:15:55] [info] [server.go:2166] Acessing HandleAddActor
+[2024-09-13 19:15:55] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 19:15:55] [info] [server.go:2166] Acessing HandleAddActor
+[2024-09-13 19:15:55] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 19:16:03] [info] [server.go:2166] Acessing HandleAddActor
+[2024-09-13 19:16:03] [info] [actorsCtrl.go:37] Checking actor in the database
+[2024-09-13 19:16:03] [info] [actorsCtrl.go:25] Creating actor in the database
+[2024-09-13 19:16:03] [info] [serialsActorsCtrl.go:33] Creating serials_actors in the database
+[2024-09-13 19:20:07] [info] [tech_ui.go:842] Logger initialized
+[2024-09-13 19:20:07] [fatal] [proc.go:271] sql: unknown driver "postgres" (forgotten import?)
+[2024-09-13 19:21:35] [info] [main.go:27] Logger initialized
+[2024-09-13 19:21:35] [info] [proc.go:271] Successfully connected to Postgres
+[2024-09-13 19:21:35] [fatal] [proc.go:271] listen tcp :3000: bind: address already in use
+[2024-09-13 19:21:51] [info] [tech_ui.go:842] Logger initialized
+[2024-09-13 19:21:51] [fatal] [proc.go:271] sql: unknown driver "postgres" (forgotten import?)
+[2024-09-13 19:22:42] [info] [tech_ui.go:843] Logger initialized
+[2024-09-13 19:22:42] [info] [proc.go:271] Successfully connected to Postgres
+[2024-09-13 19:22:50] [info] [usersCtrl.go:28] Checking user by login from the database
+[2024-09-13 19:22:50] [info] [usersPostgres.go:110] Getting user by login from the database
+[2024-09-13 19:22:50] [info] [usersCtrl.go:31] Creating favourite in the database
+[2024-09-13 19:22:50] [info] [usersCtrl.go:36] Creating user in the database
+[2024-09-13 19:22:50] [info] [tech_ui.go:866] User aregistered
+[2024-09-13 19:23:02] [warning] [tech_ui.go:866] User tried to add serial without admin rights

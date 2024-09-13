@@ -1,14 +1,20 @@
-package tech_ui
+package main
 
 import (
+	"app/config"
+	"app/logger"
+
+	"github.com/BurntSushi/toml"
 	controllers "github.com/Jarozin/controllers2"
 	"github.com/Jarozin/models"
 	repositories "github.com/Jarozin/repository"
 
 	"fmt"
+	log_default "log"
 	"time"
 
 	"github.com/jmoiron/sqlx"
+	_ "github.com/lib/pq"
 	"github.com/sirupsen/logrus"
 )
 
@@ -826,4 +832,36 @@ func Menu() int {
 	var req int
 	fmt.Scan(&req)
 	return req
+}
+
+func main() {
+	cfg := config.Config{}
+	_, err := toml.DecodeFile("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/config/config.toml", &cfg)
+	if err != nil {
+		log_default.Fatal(err)
+	}
+	log, err := logger.InitLog(cfg.Log_path)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	var db *sqlx.DB
+	switch cfg.Db_type {
+	case "postgres":
+		{
+			client, err := sqlx.Connect(cfg.Db_type, cfg.Db_url)
+			if err != nil {
+				log.Fatal(err)
+			}
+			db = client
+			defer client.Close()
+			log.Info("Successfully connected to Postgres")
+		}
+	default:
+		{
+			log.Fatal("Unknown db type")
+		}
+	}
+
+	Run(db, log)
 }
