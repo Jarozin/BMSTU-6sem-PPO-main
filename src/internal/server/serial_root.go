@@ -59,6 +59,7 @@ func (s *srv) AddToFavorite(w http.ResponseWriter, r *http.Request) error {
 }
 
 func (s *srv) HandleSerial() http.HandlerFunc {
+	s.Log.Info("Acessing HandleSerial")
 	return func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodPost {
 			err := s.AddToFavorite(w, r)

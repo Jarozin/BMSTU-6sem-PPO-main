@@ -15,6 +15,7 @@ import (
 )
 
 func (s *srv) UserAuth(next http.Handler) http.Handler {
+	s.Log.Info("Acessing UserAuth")
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		session, err := s.session.Get(r, "sname")
 		if err != nil {
@@ -30,6 +31,7 @@ func (s *srv) UserAuth(next http.Handler) http.Handler {
 }
 
 func (s *srv) HandleUserCabinet() http.HandlerFunc {
+	s.Log.Info("Acessing HandleUserCabinet")
 	return func(w http.ResponseWriter, r *http.Request) {
 		id := mux.Vars(r)["id"]
 		if id != "0" {
@@ -85,6 +87,7 @@ func (s *srv) userCabinetTemplate(w http.ResponseWriter, r *http.Request, msg st
 }
 
 func (s *srv) HandleCompareSerials() http.HandlerFunc {
+	s.Log.Info("Acessing HandleCompareSerials")
 	return func(w http.ResponseWriter, r *http.Request) {
 		type Data struct {
 			Serials []*models.Serial
@@ -118,6 +121,7 @@ func (s *srv) HandleCompareSerials() http.HandlerFunc {
 }
 
 func (s *srv) HandleFavourites() http.HandlerFunc {
+	s.Log.Info("Acessing HandleFavourites")
 	return func(w http.ResponseWriter, r *http.Request) {
 		type Data struct {
 			Favourites []*models.Serial
@@ -149,6 +153,7 @@ func (s *srv) HandleFavourites() http.HandlerFunc {
 }
 
 func (s *srv) HandleDeleteFavourite() http.HandlerFunc {
+	s.Log.Info("Acessing HandleDeleteFavourite")
 	return func(w http.ResponseWriter, r *http.Request) {
 		tid := r.FormValue("serial")
 		id, _ := strconv.Atoi(tid)
@@ -174,6 +179,7 @@ func (s *srv) HandleDeleteFavourite() http.HandlerFunc {
 }
 
 func (s *srv) HandleAddComment() http.HandlerFunc {
+	s.Log.Info("Acessing HandleAddComment")
 	return func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodPost {
 			s.AcceptAddComment(w, r)
@@ -237,6 +243,7 @@ func (s *srv) AcceptAddComment(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleUpdateComment() http.HandlerFunc {
+	s.Log.Info("Acessing HandleUpdateComment")
 	return func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodPost && r.FormValue("id") != "" {
 			s.AcceptUpdateComment(w, r)
@@ -324,6 +331,7 @@ func (s *srv) AcceptUpdateComment(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleDeleteComment() http.HandlerFunc {
+	s.Log.Info("Acessing HandleDeleteComment")
 	return func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodPost {
 			s.AcceptDeleteComment(w, r)
@@ -387,6 +395,7 @@ func (s *srv) AcceptDeleteComment(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleUpdateProfile() http.HandlerFunc {
+	s.Log.Info("Acessing HandleUpdateProfile")
 	return func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodPost {
 			s.AcceptUpdateProfile(w, r)
@@ -488,6 +497,7 @@ func (s *srv) AcceptUpdateProfile(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleHistory() http.HandlerFunc {
+	s.Log.Info("Acessing HandleHistory")
 	return func(w http.ResponseWriter, r *http.Request) {
 		type History struct {
 			Serial *models.Serial
@@ -524,6 +534,7 @@ func (s *srv) HandleHistory() http.HandlerFunc {
 }
 
 func (s *srv) HandleClearHistory() http.HandlerFunc {
+	s.Log.Info("Acessing HandleClearHistory")
 	return func(w http.ResponseWriter, r *http.Request) {
 		session, err := s.session.Get(r, "sname")
 		if err != nil {

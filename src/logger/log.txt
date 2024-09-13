@@ -799,3 +799,80 @@
 [2024-09-13 18:07:01] [info] [usersCtrl.go:24] Getting user by id from the database
 [2024-09-13 18:07:03] [info] [serialsCtrl.go:18] Getting all serials from the database
 [2024-09-13 18:07:03] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:16:12] [info] [main.go:27] Logger initialized
+[2024-09-13 18:16:12] [info] [proc.go:271] Successfully connected to Postgres
+[2024-09-13 18:16:12] [fatal] [proc.go:271] listen tcp :3000: bind: address already in use
+[2024-09-13 18:16:19] [info] [main.go:27] Logger initialized
+[2024-09-13 18:16:19] [info] [proc.go:271] Successfully connected to Postgres
+[2024-09-13 18:16:23] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:16:23] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:16:24] [info] [serialsCtrl.go:22] Getting serial by id from the database
+[2024-09-13 18:16:24] [info] [seasonsCtrl.go:25] Getting seasons by serial id from the database
+[2024-09-13 18:16:24] [info] [commentsCtrl.go:25] Getting comments by serial from the database
+[2024-09-13 18:16:24] [info] [serialsActorsCtrl.go:25] Getting actors by serial id from the database
+[2024-09-13 18:16:24] [info] [actorsCtrl.go:21] Getting actor by id from the database
+[2024-09-13 18:16:24] [info] [producersCtrl.go:21] Getting producer by id from the database
+[2024-09-13 18:16:24] [info] [serialsCtrl.go:22] Getting serial by id from the database
+[2024-09-13 18:16:24] [info] [seasonsCtrl.go:25] Getting seasons by serial id from the database
+[2024-09-13 18:16:24] [info] [commentsCtrl.go:25] Getting comments by serial from the database
+[2024-09-13 18:16:24] [info] [serialsActorsCtrl.go:25] Getting actors by serial id from the database
+[2024-09-13 18:16:24] [info] [actorsCtrl.go:21] Getting actor by id from the database
+[2024-09-13 18:16:24] [info] [producersCtrl.go:21] Getting producer by id from the database
+[2024-09-13 18:16:27] [info] [usersCtrl.go:64] Getting user by login from the database
+[2024-09-13 18:16:30] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:16:30] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:16:31] [info] [serialsCtrl.go:22] Getting serial by id from the database
+[2024-09-13 18:16:31] [info] [seasonsCtrl.go:25] Getting seasons by serial id from the database
+[2024-09-13 18:16:31] [info] [commentsCtrl.go:25] Getting comments by serial from the database
+[2024-09-13 18:16:31] [info] [serialsActorsCtrl.go:25] Getting actors by serial id from the database
+[2024-09-13 18:16:31] [info] [actorsCtrl.go:21] Getting actor by id from the database
+[2024-09-13 18:16:31] [info] [producersCtrl.go:21] Getting producer by id from the database
+[2024-09-13 18:16:31] [info] [serialsCtrl.go:22] Getting serial by id from the database
+[2024-09-13 18:16:31] [info] [seasonsCtrl.go:25] Getting seasons by serial id from the database
+[2024-09-13 18:16:31] [info] [commentsCtrl.go:25] Getting comments by serial from the database
+[2024-09-13 18:16:31] [info] [serialsActorsCtrl.go:25] Getting actors by serial id from the database
+[2024-09-13 18:16:31] [info] [actorsCtrl.go:21] Getting actor by id from the database
+[2024-09-13 18:16:31] [info] [producersCtrl.go:21] Getting producer by id from the database
+[2024-09-13 18:16:34] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:16:34] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:16:34] [info] [serialsCtrl.go:22] Getting serial by id from the database
+[2024-09-13 18:16:34] [info] [seasonsCtrl.go:25] Getting seasons by serial id from the database
+[2024-09-13 18:16:34] [info] [commentsCtrl.go:25] Getting comments by serial from the database
+[2024-09-13 18:16:34] [info] [serialsActorsCtrl.go:25] Getting actors by serial id from the database
+[2024-09-13 18:16:34] [info] [actorsCtrl.go:21] Getting actor by id from the database
+[2024-09-13 18:16:34] [info] [producersCtrl.go:21] Getting producer by id from the database
+[2024-09-13 18:16:34] [info] [serialsCtrl.go:22] Getting serial by id from the database
+[2024-09-13 18:16:34] [info] [seasonsCtrl.go:25] Getting seasons by serial id from the database
+[2024-09-13 18:16:34] [info] [commentsCtrl.go:25] Getting comments by serial from the database
+[2024-09-13 18:16:34] [info] [serialsActorsCtrl.go:25] Getting actors by serial id from the database
+[2024-09-13 18:16:34] [info] [actorsCtrl.go:21] Getting actor by id from the database
+[2024-09-13 18:16:34] [info] [producersCtrl.go:21] Getting producer by id from the database
+[2024-09-13 18:16:42] [info] [usersCtrl.go:20] Getting all users from the database
+[2024-09-13 18:16:42] [info] [usersCtrl.go:20] Getting all users from the database
+[2024-09-13 18:16:45] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:16:45] [info] [statisticCtrl.go:18] Getting statistic from the database
+[2024-09-13 18:16:45] [error] [admin_root.go:616] invalid model
+[2024-09-13 18:16:45] [info] [usersCtrl.go:81] Getting user by id from the database
+[2024-09-13 18:16:45] [info] [usersCtrl.go:88] Updating user in the database
+[2024-09-13 18:16:45] [info] [statisticCtrl.go:18] Getting statistic from the database
+[2024-09-13 18:16:45] [info] [statisticCtrl.go:22] Updating statistic in the database
+[2024-09-13 18:16:53] [info] [usersCtrl.go:20] Getting all users from the database
+[2024-09-13 18:16:53] [info] [usersCtrl.go:20] Getting all users from the database
+[2024-09-13 18:16:56] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 18:16:56] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 18:17:01] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:17:01] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:17:07] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:17:07] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 18:17:07] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:17:07] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 18:17:08] [info] [serialsCtrl.go:22] Getting serial by id from the database
+[2024-09-13 18:17:08] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:17:08] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 18:17:08] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:17:08] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 18:17:11] [info] [serialsCtrl.go:22] Getting serial by id from the database
+[2024-09-13 18:17:11] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:17:11] [info] [producersCtrl.go:17] Getting all producers from the database
+[2024-09-13 18:17:11] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:17:11] [info] [producersCtrl.go:17] Getting all producers from the database

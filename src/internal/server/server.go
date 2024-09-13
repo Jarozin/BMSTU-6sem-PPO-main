@@ -82,6 +82,7 @@ func (s *srv) InitRouter() {
 }
 
 func (s *srv) HandleExit() http.HandlerFunc {
+	s.Log.Info("Acessing HandleExit")
 	return func(w http.ResponseWriter, r *http.Request) {
 		session, _ := s.session.Get(r, "sname")
 		delete(session.Values, "user")
@@ -92,6 +93,7 @@ func (s *srv) HandleExit() http.HandlerFunc {
 }
 
 func (s *srv) HandleSearch() http.HandlerFunc {
+	s.Log.Info("Acessing HandleSearch")
 	return func(w http.ResponseWriter, r *http.Request) {
 		ctrl := controllers.NewSerialsCtrl(repositories.NewSerialsRepo(s.DB, s.Log))
 		serials, err := ctrl.GetSerialByTitle(r.FormValue("search"))
@@ -105,6 +107,7 @@ func (s *srv) HandleSearch() http.HandlerFunc {
 }
 
 func (s *srv) HandleStart() http.HandlerFunc {
+	s.Log.Info("Acessing HandleStart")
 	return func(w http.ResponseWriter, r *http.Request) {
 		ctrl := controllers.NewSerialsCtrl(repositories.NewSerialsRepo(s.DB, s.Log))
 		serials, err := ctrl.GetSerials()
@@ -117,6 +120,7 @@ func (s *srv) HandleStart() http.HandlerFunc {
 }
 
 func (s *srv) HandleLogin() http.HandlerFunc {
+	s.Log.Info("Acessing HandleLogin")
 	return func(w http.ResponseWriter, r *http.Request) {
 		session, _ := s.session.Get(r, "sname")
 		if session.Values["user"] != nil {
@@ -176,6 +180,7 @@ func (s *srv) Auth(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *srv) HandleCreateUser() http.HandlerFunc {
+	s.Log.Info("Acessing HandleCreateUser")
 	return func(w http.ResponseWriter, r *http.Request) {
 		if r.Method == http.MethodPost {
 			s.AcceptUserCreation(w, r)
