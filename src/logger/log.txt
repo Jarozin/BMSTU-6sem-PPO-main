@@ -712,3 +712,90 @@
 [2024-09-11 17:42:22] [info] [main.go:29] Logger initialized
 [2024-09-11 17:42:32] [fatal] [proc.go:271] server selection error: context deadline exceeded, current topology: { Type: ReplicaSetNoPrimary, Servers: [{ Addr: cluster0-shard-00-01.rv1dp.mongodb.net:27017, Type: Unknown, Last error: remote error: tls: internal error }, { Addr: cluster0-shard-00-00.rv1dp.mongodb.net:27017, Type: Unknown, Last error: remote error: tls: internal error }, { Addr: cluster0-shard-00-02.rv1dp.mongodb.net:27017, Type: Unknown, Last error: remote error: tls: internal error }, ] }
 [2024-09-11 21:54:48] [info] [main.go:29] Logger initialized
+[2024-09-13 18:04:59] [info] [main.go:29] Logger initialized
+[2024-09-13 18:05:09] [fatal] [proc.go:271] server selection error: context deadline exceeded, current topology: { Type: ReplicaSetNoPrimary, Servers: [{ Addr: cluster0-shard-00-00.rv1dp.mongodb.net:27017, Type: Unknown, Last error: remote error: tls: internal error }, { Addr: cluster0-shard-00-02.rv1dp.mongodb.net:27017, Type: Unknown, Last error: remote error: tls: internal error }, { Addr: cluster0-shard-00-01.rv1dp.mongodb.net:27017, Type: Unknown, Last error: remote error: tls: internal error }, ] }
+[2024-09-13 18:05:49] [info] [main.go:29] Logger initialized
+[2024-09-13 18:05:59] [fatal] [proc.go:271] server selection error: context deadline exceeded, current topology: { Type: ReplicaSetNoPrimary, Servers: [{ Addr: cluster0-shard-00-00.rv1dp.mongodb.net:27017, Type: Unknown, Last error: remote error: tls: internal error }, { Addr: cluster0-shard-00-02.rv1dp.mongodb.net:27017, Type: Unknown, Last error: remote error: tls: internal error }, { Addr: cluster0-shard-00-01.rv1dp.mongodb.net:27017, Type: Unknown, Last error: remote error: tls: internal error }, ] }
+[2024-09-13 18:06:16] [info] [main.go:29] Logger initialized
+[2024-09-13 18:06:16] [info] [proc.go:271] Successfully connected to Postgres
+[2024-09-13 18:06:17] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:06:17] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:06:23] [info] [usersCtrl.go:64] Getting user by login from the database
+[2024-09-13 18:06:23] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:23] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:28] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:06:28] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:06:39] [info] [usersCtrl.go:28] Checking user by login from the database
+[2024-09-13 18:06:39] [info] [usersPostgres.go:110] Getting user by login from the database
+[2024-09-13 18:06:39] [info] [usersCtrl.go:31] Creating favourite in the database
+[2024-09-13 18:06:39] [info] [usersCtrl.go:36] Creating user in the database
+[2024-09-13 18:06:39] [info] [statisticCtrl.go:18] Getting statistic from the database
+[2024-09-13 18:06:39] [info] [statisticCtrl.go:22] Updating statistic in the database
+[2024-09-13 18:06:39] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:39] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:44] [info] [serialsUsersCtrl.go:21] Getting serials_users by user id from the database
+[2024-09-13 18:06:44] [info] [serialsUsersCtrl.go:21] Getting serials_users by user id from the database
+[2024-09-13 18:06:45] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:45] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:46] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:06:46] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:06:46] [info] [serialsCtrl.go:22] Getting serial by id from the database
+[2024-09-13 18:06:46] [info] [seasonsCtrl.go:25] Getting seasons by serial id from the database
+[2024-09-13 18:06:46] [info] [commentsCtrl.go:25] Getting comments by serial from the database
+[2024-09-13 18:06:46] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:46] [info] [serialsActorsCtrl.go:25] Getting actors by serial id from the database
+[2024-09-13 18:06:46] [info] [actorsCtrl.go:21] Getting actor by id from the database
+[2024-09-13 18:06:46] [info] [producersCtrl.go:21] Getting producer by id from the database
+[2024-09-13 18:06:46] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:46] [info] [serialsUsersCtrl.go:33] Getting serials_users by user id and serial id from the database
+[2024-09-13 18:06:46] [info] [serialsUsersCtrl.go:37] Creating serials_users in the database
+[2024-09-13 18:06:46] [info] [serialsCtrl.go:22] Getting serial by id from the database
+[2024-09-13 18:06:46] [info] [seasonsCtrl.go:25] Getting seasons by serial id from the database
+[2024-09-13 18:06:46] [info] [commentsCtrl.go:25] Getting comments by serial from the database
+[2024-09-13 18:06:46] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:46] [info] [serialsActorsCtrl.go:25] Getting actors by serial id from the database
+[2024-09-13 18:06:46] [info] [actorsCtrl.go:21] Getting actor by id from the database
+[2024-09-13 18:06:46] [info] [producersCtrl.go:21] Getting producer by id from the database
+[2024-09-13 18:06:46] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:46] [info] [serialsUsersCtrl.go:33] Getting serials_users by user id and serial id from the database
+[2024-09-13 18:06:46] [info] [serialsUsersCtrl.go:41] Updating serials_users in the database
+[2024-09-13 18:06:48] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:48] [info] [favouritesCtrl.go:21] Getting favourite by id from the database
+[2024-09-13 18:06:48] [info] [serialsFavouritesCtrl.go:41] Checking serial in favourite
+[2024-09-13 18:06:48] [info] [logger.go:317] <nil> [] true
+[2024-09-13 18:06:48] [info] [serialsFavouritesCtrl.go:33] Creating serials_favourites in the database
+[2024-09-13 18:06:48] [info] [favouritesCtrl.go:25] Updating favourite in the database
+[2024-09-13 18:06:48] [info] [serialsCtrl.go:22] Getting serial by id from the database
+[2024-09-13 18:06:48] [info] [seasonsCtrl.go:25] Getting seasons by serial id from the database
+[2024-09-13 18:06:48] [info] [commentsCtrl.go:25] Getting comments by serial from the database
+[2024-09-13 18:06:48] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:48] [info] [serialsActorsCtrl.go:25] Getting actors by serial id from the database
+[2024-09-13 18:06:48] [info] [actorsCtrl.go:21] Getting actor by id from the database
+[2024-09-13 18:06:48] [info] [producersCtrl.go:21] Getting producer by id from the database
+[2024-09-13 18:06:48] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:48] [info] [serialsUsersCtrl.go:33] Getting serials_users by user id and serial id from the database
+[2024-09-13 18:06:48] [info] [serialsUsersCtrl.go:41] Updating serials_users in the database
+[2024-09-13 18:06:48] [info] [serialsCtrl.go:22] Getting serial by id from the database
+[2024-09-13 18:06:48] [info] [seasonsCtrl.go:25] Getting seasons by serial id from the database
+[2024-09-13 18:06:48] [info] [commentsCtrl.go:25] Getting comments by serial from the database
+[2024-09-13 18:06:48] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:48] [info] [serialsActorsCtrl.go:25] Getting actors by serial id from the database
+[2024-09-13 18:06:48] [info] [actorsCtrl.go:21] Getting actor by id from the database
+[2024-09-13 18:06:48] [info] [producersCtrl.go:21] Getting producer by id from the database
+[2024-09-13 18:06:48] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:48] [info] [serialsUsersCtrl.go:33] Getting serials_users by user id and serial id from the database
+[2024-09-13 18:06:48] [info] [serialsUsersCtrl.go:41] Updating serials_users in the database
+[2024-09-13 18:06:50] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:06:50] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:06:55] [info] [commentsCtrl.go:49] Checking if comment exists in the database
+[2024-09-13 18:06:55] [info] [commentsCtrl.go:37] Creating comment in the database
+[2024-09-13 18:06:55] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:55] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:06:59] [info] [serialsUsersCtrl.go:21] Getting serials_users by user id from the database
+[2024-09-13 18:06:59] [info] [serialsCtrl.go:22] Getting serial by id from the database
+[2024-09-13 18:06:59] [info] [serialsUsersCtrl.go:21] Getting serials_users by user id from the database
+[2024-09-13 18:06:59] [info] [serialsCtrl.go:22] Getting serial by id from the database
+[2024-09-13 18:07:01] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:07:01] [info] [usersCtrl.go:24] Getting user by id from the database
+[2024-09-13 18:07:03] [info] [serialsCtrl.go:18] Getting all serials from the database
+[2024-09-13 18:07:03] [info] [serialsCtrl.go:18] Getting all serials from the database

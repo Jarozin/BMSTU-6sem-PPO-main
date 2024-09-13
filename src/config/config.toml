@@ -1,6 +1,6 @@
 port = ":3000"
 db_url = "user=postgres dbname=serial password=7303_486 host=localhost port=5432 sslmode=disable"
-db_type = "mongo"
+db_type = "postgres"
 
 log_path = "/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/logger/log.txt"
 

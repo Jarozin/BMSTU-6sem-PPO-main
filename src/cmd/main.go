@@ -9,8 +9,6 @@ import (
 	"net/http"
 	"time"
 
-	// "app/tech_ui"
-
 	log_default "log"
 
 	"github.com/BurntSushi/toml"
