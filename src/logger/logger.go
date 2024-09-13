@@ -18,7 +18,7 @@ type LogLevel struct {
 type CustomTextFormatter struct {
 }
 
-const logLevelFile = "/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/logger/log.txt"
+const logLevelFile = "/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/logger/log_level.txt"
 
 func (f *CustomTextFormatter) Format(entry *logrus.Entry) ([]byte, error) {
 	// Get the file and line number where the log was called
@@ -46,7 +46,7 @@ func InitLog(filename string) (*logrus.Logger, error) {
 	}
 
 	var level LogLevel
-	_, err = toml.DecodeFile("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/config/config.toml", &level)
+	_, err = toml.DecodeFile(logLevelFile, &level)
 	if err != nil {
 		return nil, err
 	}
