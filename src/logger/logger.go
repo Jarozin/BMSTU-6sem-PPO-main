@@ -7,11 +7,18 @@ import (
 	"path/filepath"
 	"runtime"
 
+	"github.com/BurntSushi/toml"
 	"github.com/sirupsen/logrus"
 )
 
+type LogLevel struct {
+	Level string `toml:"level"`
+}
+
 type CustomTextFormatter struct {
 }
+
+const logLevelFile = "/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/logger/log.txt"
 
 func (f *CustomTextFormatter) Format(entry *logrus.Entry) ([]byte, error) {
 	// Get the file and line number where the log was called
@@ -37,7 +44,32 @@ func InitLog(filename string) (*logrus.Logger, error) {
 	if err != nil {
 		return nil, err
 	}
+
+	var level LogLevel
+	_, err = toml.DecodeFile("/home/jarozin/uni/sem6/alternative/BMSTU-6sem-PPO-main/src/config/config.toml", &level)
+	if err != nil {
+		return nil, err
+	}
 	log := logrus.New()
+
+	switch level.Level {
+	case "info":
+		log.SetLevel(logrus.InfoLevel)
+	case "error":
+		log.SetLevel(logrus.ErrorLevel)
+	case "fatal":
+		log.SetLevel(logrus.FatalLevel)
+	case "debug":
+		log.SetLevel(logrus.DebugLevel)
+	case "trace":
+		log.SetLevel(logrus.TraceLevel)
+	case "warn":
+		log.SetLevel(logrus.WarnLevel)
+	case "panic":
+		log.SetLevel(logrus.PanicLevel)
+	}
+
+	log.SetLevel()
 	log.SetOutput(io.MultiWriter(file, os.Stdout))
 	log.SetFormatter(&CustomTextFormatter{})
 
