@@ -69,7 +69,6 @@ func InitLog(filename string) (*logrus.Logger, error) {
 		log.SetLevel(logrus.PanicLevel)
 	}
 
-	log.SetLevel()
 	log.SetOutput(io.MultiWriter(file, os.Stdout))
 	log.SetFormatter(&CustomTextFormatter{})
 
